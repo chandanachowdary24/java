@@ -1,0 +1,44 @@
+import javax.swing.*;
+abstract class shape 
+{
+int a,b;
+abstract void printarea();
+}
+class rectangle extends shape
+{
+void printarea()
+{
+a=Integer.parseInt(JOptionPane.showInputDialog("enter length"));
+b=Integer.parseInt(JOptionPane.showInputDialog("enter breadth"));
+JOptionPane.showMessageDialog(null,"area of rectangle is"+a*b);
+}
+}
+class triangle extends shape
+{
+void printarea()
+{
+a=Integer.parseInt(JOptionPane.showInputDialog("enter base"));
+b=Integer.parseInt(JOptionPane.showInputDialog("enter height"));
+JOptionPane.showMessageDialog(null,"area of triangle is"+(0.5*(a*b)));
+}
+}
+class circle extends shape
+{
+void printarea()
+{
+a=Integer.parseInt(JOptionPane.showInputDialog("enter radius"));
+JOptionPane.showMessageDialog(null,"area of circle is"+3.14*a*a);
+}
+}
+class testfree
+{
+public static void main(String x[])
+{
+shape r=new rectangle();
+shape t=new triangle();
+shape c=new circle();
+r.printarea();
+t.printarea();
+c.printarea();
+}
+}
