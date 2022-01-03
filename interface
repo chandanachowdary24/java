@@ -1,0 +1,27 @@
+interface ex
+{
+void print();
+}
+class p implements ex
+{
+public void print()
+{
+System.out.println("interface");
+}
+}
+class q implements ex
+{
+public void print()
+{
+System.out.println("interface ultra pro");
+}
+}
+class fest
+{
+public static void main(String x[])
+{
+ex pix=new p();
+pix.print();
+ex fix=new q();
+fix.print();
+}
