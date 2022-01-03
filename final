@@ -1,0 +1,16 @@
+class bike
+{
+final int speed=40;
+void run()
+{
+System.out.println("speed="+speed);
+}
+}
+class next
+{
+public static void main(String x[])
+{
+bike b=new bike();
+b.run();
+}
+}
